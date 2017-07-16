@@ -1,0 +1,15 @@
+dm_contact_homepage:
+    path:     /contact/
+    defaults: { _controller: DMContactBundle:Default:index }
+
+dm_contact_add:
+    path:     /contact/add/
+    defaults: { _controller: DMContactBundle:Default:add }
+    
+dm_contact_view:
+    path:     /contact/view/{id}
+    defaults: { _controller: DMContactBundle:Default:view }
+    
+dm_contact_list:
+    path:     /contact/list/
+    defaults: { _controller: DMContactBundle:Default:list }
