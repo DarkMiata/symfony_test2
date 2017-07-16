@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+  {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{% block menu %}
+  {{ include('CoreBundle:Default:menu_nav_block.html.twig') }}
+{% endblock %}
+--------------------------------
+<h1>
+  {% block titre %}{% endblock %}
+</h1>
+{% block body %}{% endblock %}
+{% block footer %}<br>--------------------------------<br>Copyright DarkMiata 2017  {% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>

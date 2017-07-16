@@ -1,0 +1,16 @@
+core_homepage:
+    path:     /
+    defaults: { _controller: CoreBundle:Default:index }
+
+view:
+    path:     /view
+    defaults: { _controller: CoreBundle:TestMongo:view }
+
+add:
+    path:     /add
+    defaults: { _controller: CoreBundle:TestMongo:add }
+
+delete_by_i_d:
+    path:     /deleteByID
+    defaults: { _controller: CoreBundle:TestMongo:deleteByID }
+

@@ -1,0 +1,4 @@
+services:
+#    dm_contact.example:
+#        class: DM\ContactBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

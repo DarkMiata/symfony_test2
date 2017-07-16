@@ -1,0 +1,16 @@
+{# ContactBundle:Default:list #}
+
+{% extends "::base.html.twig" %}
+
+{% block title %}contact - vue{% endblock %}
+{% block titre %}Liste des contacts - vue{% endblock %}
+{% block body %}
+  {% for contact in contacts %}
+    ID:     {{ contact.id }}<br>
+    nom:    {{ contact.nom }}<br>
+    prenom: {{ contact.prenom }}<br>
+    email:  {{ contact.email }}<br>
+    date:   {{ contact.dateNaissance.date }}<br>
+    ==========================<br>
+  {% endfor %}
+{% endblock %}

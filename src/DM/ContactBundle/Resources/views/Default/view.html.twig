@@ -1,0 +1,29 @@
+{# corebundle:default:view #}
+
+{% extends "::base.html.twig" %}
+
+{% block title %}contact - vue{% endblock %}
+{% block titre %}Vue de id n°{{contact.id }}{% endblock %}
+{% block body %}
+    nom:    {{ contact.nom }}<br>
+    prenom: {{ contact.prenom }}<br>
+    email:  {{ contact.email }}<br>
+    date:   {{ contact.dateNaissance.date }}<br>
+{% endblock %}
+
+{#
+<html>
+  <head>
+    <title>contact - vue</title>
+  </head>
+  <body>
+    <h1>Contact - vue</h1>
+    ID:     {{ contact.id }}<br>
+    nom:    {{ contact.nom }}<br>
+    prenom: {{ contact.prenom }}<br>
+    email:  {{ contact.email }}<br>
+    date:   {{ contact.dateNaissance.date }}<br>
+  </body>
+</html>
+#}
+
