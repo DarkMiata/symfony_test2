@@ -5,12 +5,17 @@
 {% block title %}contact - vue{% endblock %}
 {% block titre %}Liste des contacts - vue{% endblock %}
 {% block body %}
+{{ msg }}
   {% for contact in contacts %}
     ID:     {{ contact.id }}<br>
     nom:    {{ contact.nom }}<br>
     prenom: {{ contact.prenom }}<br>
     email:  {{ contact.email }}<br>
     date:   {{ contact.dateNaissance.date }}<br>
+    --------------------------<br>
+    <a href={{ path('dm_contact_deleteconfirm',{'id': contact.id})  }}>
+      Effacer<br>
+    </a>
     ==========================<br>
   {% endfor %}
 {% endblock %}

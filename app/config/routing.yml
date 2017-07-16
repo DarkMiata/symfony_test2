@@ -3,8 +3,9 @@ core:
     prefix:   /
 
 dm_contact:
-    resource: "@DMContactBundle/Resources/config/routing.yml"
+    resource: "@DMContactBundle/Controller/DefaultController.php"
     prefix:   /
+    type: annotation
   
 login:
   path: /login

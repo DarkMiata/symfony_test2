@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}contact - effacer - confirmation{% endblock %}
+{% block titre %}Contact - effacer - confirmation{% endblock %}
+{% block body %}
+  ID:     {{ contact.id }}<br>
+  nom:    {{ contact.nom }}<br>
+  prenom: {{ contact.prenom }}<br>
+  email:  {{ contact.email }}<br>
+  date:   {{ contact.dateNaissance.date }}<br>
+  --------------------------<br>
+  Voulez-vous vraiment effacer le contact ?
+  <a href={{ path('dm_contact_deletebyid',{'id': contact.id}) }}>Oui</a>
+  <a href={{ path('dm_contact_list') }}>Non</a>
+  
+{% endblock %}
