@@ -1,11 +1,21 @@
+dm_test:
+  resource: "@DMTestBundle/Controller/"
+  type:     annotation
+  prefix:   /
+
 core:
-    resource: "@CoreBundle/Resources/config/routing.yml"
-    prefix:   /
+  resource: "@CoreBundle/Resources/config/routing.yml"
+  prefix:   /
 
 dm_contact:
-    resource: "@DMContactBundle/Controller/DefaultController.php"
-    prefix:   /
-    type: annotation
+  resource: "@DMContactBundle/Controller/DefaultController.php"
+  prefix:   /
+  type: annotation
+
+dm_contact2:
+  resource: "@DMContactBundle/Controller/ContactController.php"
+  prefix:   /
+  type: annotation
   
 login:
   path: /login

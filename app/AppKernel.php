@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new DM\ContactBundle\DMContactBundle(),
             new CoreBundle\CoreBundle(),
             new UserBundle\UserBundle(),
+            new DM\TestBundle\DMTestBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
